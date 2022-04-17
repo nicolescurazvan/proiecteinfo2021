@@ -1,0 +1,24 @@
+#include<iostream>
+#include<windows.h>
+using namespace std;
+int main()
+{
+    cout<<"BMI calculator\n\n";
+    float w,h,bmi;
+    cout<<"Your height (in meters): "; cin>>h;
+    cout<<"Your weight (in kilograms): "; cin>>w;
+    bmi=w/(h*h);
+    cout<<"Your BMI is: "<<bmi<<"\n";
+    if(bmi<18)
+        cout<<"Underweight";
+    else if(bmi<25)
+        cout<<"Normal";
+    else if(bmi<30)
+        cout<<"Overweight";
+    else
+        cout<<"Obese";
+    system("pause");
+    cout<<"Press any key to continue";
+    system("cls");
+    return 0;
+}
